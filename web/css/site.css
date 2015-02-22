@@ -1,0 +1,202 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
+body {
+    background: white;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+#c {
+    /* position: fixed; right: 0; bottom: 0;
+     min-width: 100%; min-height: 100%;
+      width: auto; height: auto; z-index: -100;
+      background: url(polina.jpg) no-repeat;
+      background-size: cover; */
+
+    /*
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999; */
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+h1{
+    text-transform: capitalize;
+    font-size: 65px;
+    font-weight: 800;
+}
+h2{
+
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+h1 span{
+    color: #2b8be9;
+}
+#d {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#v {
+    opacity: 0;
+}
+p {
+    position: relative;
+    z-index: 1;
+}
+#master{
+    position: absolute;
+    z-index: 5;
+    color: white;
+    width: 99%;
+    top: 40%;
+    text-align: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    /* color: black; */
+    z-index: 3;
+    position: fixed;
+    background: black;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.4
+}
+.quizContainer{
+    color: #2b8be9;
+    width: 90%;
+    top: -20px;
+    left: 5%;
+    border-radius: 20px;
+    height: auto;
+    z-index: 99;
+    background: white;
+    position: absolute;
+    padding-top: 20px;
+    display: none;
+}
+.quizContainer h2{
+    text-align: center;
+
+}
+.answer{
+    display:block;
+    width:100%;
+    text-align:center;
+    max-width: 680px;
+    margin: auto;
+}
+.answer h3{
+    font-size: 15px;
+    color: #9FCCF5;
+    font-size: 20px;
+    font-weight: 900;
+}
+.answer ul {
+    display:inline-block;
+    list-style-type: none;
+    overflow:auto;
+    padding: 0px;
+}
+.answer ul li{
+    float:left;
+    padding: 28px;
+    padding-bottom: 8px
+}
+.answer ul li img{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: lavender;
+}
+.answer ul > li:hover img{
+    border-color: #2b8be9;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -ms-transform: scale(1.12); /* IE 9 */
+    -webkit-transform: scale(1.12); /* Chrome, Safari, Opera */
+    transform: scale(1.12);
+}
+.answer ul > li:hover h3{
+    color : #0F69BA;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+    transform: scale(1.2);
+}
+
+.answer input[type=radio]:checked + label img{
+    border-color: #2b8be9;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -ms-transform: scale(1.17); /* IE 9 */
+    -webkit-transform: scale(1.17); /* Chrome, Safari, Opera */
+    transform: scale(1.17);
+}
+
+.answer input[type=radio]:checked + label h3{
+    color: #0F69BA;
+    -webkit-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition: all 300ms cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -webkit-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.000, 0.275, 0.580, 1.000); /* custom */
+
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+    transform: scale(1.2);
+}
+
+input[type=radio]{
+    display: none;
+}
